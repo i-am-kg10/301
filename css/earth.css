@@ -1,0 +1,997 @@
+
+#CSS3solarSystem{
+	padding:0;
+	margin:10px;
+	width:1000px;
+	height:1000px;	
+	position:relative;
+	
+	background-image:-webkit-gradient(
+			radial, 
+			500 500, 1, 
+			500 500, 500, 
+			from(#E4C700), 
+			color-stop(0.05, rgba(228,199,0,0.3)), 
+			color-stop(0.9, black), 
+			to(black));
+		
+	background:
+		-moz-radial-gradient(
+			500px 500px, /* background position */
+			circle closest-side, /* shape size */
+			#E4C700,
+			rgba(228,199,0,0.3) 5%,
+			black 90%	
+		);
+}
+
+#grid{
+	width:1000px;
+	height:1000px;	
+	
+	/*background:-moz-repeating-linear-gradient(center center 0deg, red, red 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 40px),
+	-moz-repeating-linear-gradient(center center 90deg, red, red 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 40px),
+	-moz-repeating-linear-gradient(center center 0deg, #99CC00, #99CC00 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 10px),
+	-moz-repeating-linear-gradient(center center 90deg, #99CC00, #99CC00 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 10px);	*/
+}
+
+#sun{
+	width:60px;
+	height:60px;	
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	
+	background-image:-webkit-gradient(
+				radial, 
+				20 20, 1, 
+				30 30, 30, 
+				from(#F4F201), 
+				color-stop(0.8, #E4C700),
+				to(rgba(228,199,0,0)));
+		
+		background:-moz-radial-gradient(
+				20px 20px, /* background position */
+				circle farthest-corner, /* shape size */
+				#F4F201,
+				#E4C700 60%,
+				rgba(228,199,0,0)	
+			);
+	position:absolute;
+	left:470px;
+	top:470px;
+}
+	
+#right .planet {
+	position:absolute;
+	right:0;	
+}
+#left .planet {
+	position:absolute;
+	left:0;	
+}
+.planet{
+	height:20px;
+	width:20px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#right .shadow{
+	position:absolute;
+	right:0;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+}
+
+#left .shadow{
+	position:absolute;
+	left:0;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+}
+
+.shadow{
+	background-color:rgba(0,0,0,0.5);
+	height:20px;
+	width:10px;
+}
+
+.noSatellite{
+	height:20px;
+	position:absolute;
+	top:490px;
+}
+
+.withSatellite{
+	height:48px;
+	position:absolute;
+	top:476px;
+}
+
+.withSatellite .planet{
+	top:14px;
+}
+
+.withSatellite .shadow{
+	top:14px;
+}
+
+#right .sat_container{
+	position:absolute;
+	right:5px;
+}
+
+#left .sat_container{
+	position:absolute;
+	left:5px;
+}
+
+.sat_container{
+	height:48px;
+	width:8px;
+}
+#left .satellite{
+	position:absolute;
+	bottom:0;	
+}
+
+.satellite{
+	height:8px;
+	width:8px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	
+	background-image:-webkit-gradient(
+				radial, 
+				3 3, 1, 
+				4 4, 5, 
+				from(#969696), 
+				to(#696969));
+		
+		background:-moz-radial-gradient(
+				3px 3px, /* background position */
+				circle farthest-corner, /* shape size */
+				#969696,
+				#696969	
+			);
+}
+
+
+
+#p1{
+	width:100px;
+	left:450px;
+}
+
+#p1 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(0, 88%, 55%)), 
+				to(hsl(0, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(0, 88%, 55%),
+				hsl(0, 88%, 30%)
+			);
+}
+
+#p2{
+	width:140px;
+	left:430px;
+}
+
+#p2 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(20, 88%, 55%)), 
+				to(hsl(20, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(20, 88%, 55%),
+				hsl(20, 88%, 30%)
+			);
+}
+
+#p3{
+	width:180px;
+	left:410px;
+}
+
+#p3 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(40, 88%, 55%)), 
+				to(hsl(40, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(40, 88%, 55%),
+				hsl(40, 88%, 30%)
+			);
+}
+
+#p4{
+	width:220px;
+	left:390px;
+}
+
+#p4 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(60, 88%, 55%)), 
+				to(hsl(60, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(60, 88%, 55%),
+				hsl(60, 88%, 30%)
+			);
+}
+
+#p5{
+	width:260px;
+	left:370px;
+}
+
+#p5 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(80, 88%, 55%)), 
+				to(hsl(80, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(80, 88%, 55%),
+				hsl(80, 88%, 30%)
+			);
+}
+
+#p6{
+	width:300px;
+	left:350px;
+}
+
+#p6 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(100, 88%, 55%)), 
+				to(hsl(100, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(100, 88%, 55%),
+				hsl(100, 88%, 30%)
+			);
+}
+
+#p7{
+	width:340px;
+	left:330px;
+}
+
+#p7 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(120, 88%, 55%)), 
+				to(hsl(120, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(120, 88%, 55%),
+				hsl(120, 88%, 30%)
+			);
+}
+
+#p8{
+	width:380px;
+	left:310px;
+}
+
+#p8 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(140, 88%, 55%)), 
+				to(hsl(140, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(140, 88%, 55%),
+				hsl(140, 88%, 30%)
+			);
+}
+
+#p9{
+	width:420px;
+	left:290px;
+}
+
+#p9 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(160, 88%, 55%)), 
+				to(hsl(160, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(160, 88%, 55%),
+				hsl(160, 88%, 30%)
+			);
+}
+
+#p10{
+	width:460px;
+	left:270px;
+}
+
+#p10 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(180, 88%, 55%)), 
+				to(hsl(180, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(180, 88%, 55%),
+				hsl(180, 88%, 30%)
+			);
+}
+#p11{
+	width:500px;
+	left:250px;
+}
+
+#p11 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(200, 88%, 55%)), 
+				to(hsl(200, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(200, 88%, 55%),
+				hsl(200, 88%, 30%)
+			);
+}
+
+#p12{
+	width:540px;
+	left:230px;
+}
+
+#p12 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(220, 88%, 55%)), 
+				to(hsl(220, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(220, 88%, 55%),
+				hsl(220, 88%, 30%)
+			);
+}
+#p13{
+	width:580px;
+	left:210px;
+}
+
+#p13 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(240, 88%, 55%)), 
+				to(hsl(240, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(240, 88%, 55%),
+				hsl(240, 88%, 30%)
+			);
+}
+
+#p14{
+	width:620px;
+	left:190px;
+}
+
+#p14 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(260, 88%, 55%)), 
+				to(hsl(260, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(260, 88%, 55%),
+				hsl(260, 88%, 30%)
+			);
+}
+
+#p15{
+	width:660px;
+	left:170px;
+}
+
+#p15 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(280, 88%, 55%)), 
+				to(hsl(280, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(280, 88%, 55%),
+				hsl(280, 88%, 30%)
+			);
+}
+
+#p16{
+	width:700px;
+	left:150px;
+}
+
+#p16 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(300, 88%, 55%)), 
+				to(hsl(300, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(300, 88%, 55%),
+				hsl(300, 88%, 30%)
+			);
+}
+
+#p17{
+	width:740px;
+	left:130px;
+}
+
+#p17 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(320, 88%, 55%)), 
+				to(hsl(320, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(320, 88%, 55%),
+				hsl(320, 88%, 30%)
+			);
+}
+
+#p18{
+	width:780px;
+	left:110px;
+}
+
+#p18 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(340, 88%, 55%)), 
+				to(hsl(340, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(340, 88%, 55%),
+				hsl(340, 88%, 30%)
+			);
+}
+#p19{
+	width:820px;
+	left:90px;
+}
+
+#p19 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(360, 88%, 55%)), 
+				to(hsl(360, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(0, 88%, 55%),
+				hsl(0, 88%, 30%)
+			);
+}
+
+#p20{
+	width:860px;
+	left:70px;
+}
+
+#p20 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(350, 88%, 55%)), 
+				to(hsl(350, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(350, 88%, 55%),
+				hsl(350, 88%, 30%)
+			);
+}
+
+#op1{
+	width:100px;
+	left:450px;
+}
+
+#op1 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(0, 88%, 55%)), 
+				to(hsl(0, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(0, 88%, 55%),
+				hsl(0, 88%, 30%)
+			);
+}
+
+#op2{
+	width:140px;
+	left:430px;
+}
+
+#op2 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(20, 88%, 55%)), 
+				to(hsl(20, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(20, 88%, 55%),
+				hsl(20, 88%, 30%)
+			);
+}
+
+#op3{
+	width:180px;
+	left:410px;
+}
+
+#op3 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(40, 88%, 55%)), 
+				to(hsl(40, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(40, 88%, 55%),
+				hsl(40, 88%, 30%)
+			);
+}
+
+#op4{
+	width:220px;
+	left:390px;
+}
+
+#op4 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(60, 88%, 55%)), 
+				to(hsl(60, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(60, 88%, 55%),
+				hsl(60, 88%, 30%)
+			);
+}
+
+#op5{
+	width:260px;
+	left:370px;
+}
+
+#op5 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(80, 88%, 55%)), 
+				to(hsl(80, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(80, 88%, 55%),
+				hsl(80, 88%, 30%)
+			);
+}
+
+#op6{
+	width:300px;
+	left:350px;
+}
+
+#op6 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(100, 88%, 55%)), 
+				to(hsl(100, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(100, 88%, 55%),
+				hsl(100, 88%, 30%)
+			);
+}
+
+#op7{
+	width:340px;
+	left:330px;
+}
+
+#op7 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(120, 88%, 55%)), 
+				to(hsl(120, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(120, 88%, 55%),
+				hsl(120, 88%, 30%)
+			);
+}
+
+#op8{
+	width:380px;
+	left:310px;
+}
+
+#op8 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(140, 88%, 55%)), 
+				to(hsl(140, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(140, 88%, 55%),
+				hsl(140, 88%, 30%)
+			);
+}
+
+#op9{
+	width:420px;
+	left:290px;
+}
+
+#op9 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(160, 88%, 55%)), 
+				to(hsl(160, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(160, 88%, 55%),
+				hsl(160, 88%, 30%)
+			);
+}
+
+#op10{
+	width:460px;
+	left:270px;
+}
+
+#op10 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(180, 88%, 55%)), 
+				to(hsl(180, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(180, 88%, 55%),
+				hsl(180, 88%, 30%)
+			);
+}
+#op11{
+	width:500px;
+	left:250px;
+}
+
+#op11 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(200, 88%, 55%)), 
+				to(hsl(200, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(200, 88%, 55%),
+				hsl(200, 88%, 30%)
+			);
+}
+
+#op12{
+	width:540px;
+	left:230px;
+}
+
+#op12 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(220, 88%, 55%)), 
+				to(hsl(220, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(220, 88%, 55%),
+				hsl(220, 88%, 30%)
+			);
+}
+#op13{
+	width:580px;
+	left:210px;
+}
+
+#op13 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(240, 88%, 55%)), 
+				to(hsl(240, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(240, 88%, 55%),
+				hsl(240, 88%, 30%)
+			);
+}
+
+#op14{
+	width:620px;
+	left:190px;
+}
+
+#op14 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(260, 88%, 55%)), 
+				to(hsl(260, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(260, 88%, 55%),
+				hsl(260, 88%, 30%)
+			);
+}
+
+#op15{
+	width:660px;
+	left:170px;
+}
+
+#op15 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(280, 88%, 55%)), 
+				to(hsl(280, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(280, 88%, 55%),
+				hsl(280, 88%, 30%)
+			);
+}
+
+#op16{
+	width:700px;
+	left:150px;
+}
+
+#op16 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(300, 88%, 55%)), 
+				to(hsl(300, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(300, 88%, 55%),
+				hsl(300, 88%, 30%)
+			);
+}
+
+#op17{
+	width:740px;
+	left:130px;
+}
+
+#op17 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(320, 88%, 55%)), 
+				to(hsl(320, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(320, 88%, 55%),
+				hsl(320, 88%, 30%)
+			);
+}
+
+#op18{
+	width:780px;
+	left:110px;
+}
+
+#op18 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(340, 88%, 55%)), 
+				to(hsl(340, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(340, 88%, 55%),
+				hsl(340, 88%, 30%)
+			);
+}
+#op19{
+	width:820px;
+	left:90px;
+}
+
+#op19 .planet{
+background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(360, 88%, 55%)), 
+				to(hsl(360, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(0, 88%, 55%),
+				hsl(0, 88%, 30%)
+			);
+}
+
+#op20{
+	width:860px;
+	left:70px;
+}
+
+#op20 .planet{
+	background-image:-webkit-gradient(
+				radial, 
+				7 7, 1, 
+				10 10, 10, 
+				from(hsl(350, 88%, 55%)), 
+				to(hsl(350, 88%, 30%)));
+		
+		background:-moz-radial-gradient(
+				7px 7px, /* background position */
+				circle farthest-corner, /* shape size */
+				hsl(350, 88%, 55%),
+				hsl(350, 88%, 30%)
+			);
+}

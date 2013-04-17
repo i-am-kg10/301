@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Testimonials</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">  
+  </head>
+
+  <body>
+
+   <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="ghaffarian.html">Koushaw Ghaffarian</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="ghaffarian.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#study">Study</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li class="active"><a href="testimonial.html">Testimonial</a></li>                                
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form pull-right">
+                  <input class="span2" type="text" placeholder="Search">
+                  <button type="submit" class="btn">Search</button>
+              </form>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Testimonials</h1>
+        <p>I am a 22 year old senior at the University of Southern California. I was born and raised in Orange County, and lived there until I was 18, with my parents and my baby sister. After Graduating high school, I moved to Washington DC while I studied at George Washington Univeristy. One year later I made the switch over to USC, and I've lived in Southern Califorina ever since</p>
+        <p><a href="#" class="btn btn-primary btn-large">See Resume &raquo;</a></p>
+      </div>
+
+      <hr>
+      
+       <div id="person">
+    
+            <h1>People I've Worked With</h1>
+        
+            <div id="person_pics">           
+            </div>
+            
+            <div id="person_data">
+            </div>
+       		
+	   </div>           
+
+         <div id="buttons">
+            <input type="button" value=" <-- Previous" id="previous"/>
+            
+            <input type="button" value="Next -->" id="next"/>
+        </div>
+        
+           <br />
+    <br />
+    <br />
+	
+    <div id="person">
+    
+    	<h1>People You Want To Add</h1>
+        
+        <div id="user_data">
+	
+    	<br />
+		Your Name: <input type="text" id="user_name"/>        
+		<br />
+       	Your Company: <input type="text" id="user_company"/>        
+		<br />
+        Your Position: <input type="text" id="user_position"/>        
+		<br />
+        Your statement: <input type="text" id="user_statement"/>        
+		<br />
+        Your Photo URL: <input type="text" id="user_photo"/>   
+	
+    	<br />
+		<br />
+       
+        <input type="button" value="Add A New Testimonial" id="new" />
+     
+        <input type="button" id="allcookie" value="Display" />    
+        <input type="reset" id="reset" value="Reset" />
+     
+		<br />
+                
+        </div>
+    
+    </div>
+
+
+      <footer>
+        <p>&copy; Ghaffarian 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="http://webdev.usc.edu/jquery.js"></script>
+    <script src="http://webdev.usc.edu/jquery-cookie.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    
+	<script language="javascript">
+   
+        var personphotos = new Array; var personcompany = new Array ; var personposition = new Array ; statement = new Array; personname = new Array
+        personphotos[0] = "img/ed.jpg" ; personcompany[0] = "Harvey & Company LLC" ; personposition [0] = "Director" ; statement [0] = "Wes anderson DIY flexitarian, wolf gentrify pinterest narwhal seitan. Vinyl deep v scenester, thundercats butcher church-key food truck street art hoodie mcsweeney's." ; personname[0] = "Edward Kim" 
+        personphotos[1] = "img/susan.jpg"; personcompany[1] = "Federal Communications Commission" ; personposition [1] = "Cheif" ;  statement [1] = "Wes anderson DIY flexitarian, wolf gentrify pinterest narwhal seitan. Vinyl deep v scenester, thundercats butcher church-key food truck street art hoodie mcsweeney's."; personname[1] = "Susan McLean"
+            personphotos[2] = "img/gordon.jpg"; personcompany[2] = "Sage Hill School" ; personposition [2] = "Head of School" ;  statement [2] = "Wes anderson DIY flexitarian, wolf gentrify pinterest narwhal seitan. Vinyl deep v scenester, thundercats butcher church-key food truck street art hoodie mcsweeney's."; personname[2] = "Gordon McNeill"
+        
+        var thenumber = 0
+        
+        var loadinfo = function() {
+            i = thenumber
+            
+            $('#person_pics').hide();
+            $('#person_data').hide();
+            
+            temp1 = "<img src='" + personphotos[i] + "' />"
+        
+            temp2 = "<strong>" + personname[i] + "</strong>" + "<br /><strong>" + personcompany[i] + "</strong>" + "<br /><strong>" + personposition[i] + "</strong><br />" + "<br />" + statement[i]; 
+            
+            $('#person_pics').html(temp1);
+            $('#person_data').html(temp2);
+            $('#person_pics').fadeIn(700);
+            $('#person_data').fadeIn(700);
+        }
+        
+        $(document).ready(function() {
+            
+            loadinfo();
+        
+            $('#next').bind('click',function() {
+                if (thenumber != personname.length - 1) {
+                thenumber = thenumber + 1
+                loadinfo()
+                }
+                else {
+                thenumber = 0
+                loadinfo()
+                }
+            });
+            
+            $('#previous').bind('click',function() {
+                if (thenumber != 0) {
+                thenumber = thenumber - 1
+                loadinfo()
+                }
+                else {
+                thenumber = personname.length - 1
+                loadinfo()
+                }
+            });
+            
+            $('#new').bind('click', function() {
+                if (document.getElementById('user_name').value != '' || document.getElementById('user_company').value != '' || document.getElementById('user_position').value != '' || document.getElementById('user_statement').value != '' || document.getElementById('user_photo').value != '') 
+                    {
+                        personname.push(document.getElementById('user_name').value);
+                        personcompany.push(document.getElementById('user_company').value);
+                        personposition.push(document.getElementById('user_position').value);
+                        statement.push(document.getElementById('user_statement').value);
+                        personphotos.push(document.getElementById('user_photo').value);
+                        thenumber = personname.length - 1;
+                        loadinfo();
+						
+						cname = $("#user_name").attr("value");
+						ccompany = $("#user_company").attr("value");
+						cposition = $("#user_position").attr("value");
+						cstatement = $("#user_statement").attr("value");
+						cphoto = $("#user_photo").attr("value");
+						document.cookie = "name=" + cname
+						document.cookie = "company=" + ccompany
+						document.cookie = "position=" + cposition
+						document.cookie = "statement=" + cstatement
+						document.cookie = "photo=" + cphoto                
+                    }
+					
+                    else
+                    {
+                    alert("Please fill in all of the required information")
+                    }
+                
+            });
+        });
+        
+         var getCookie = function (cname)
+            {
+            var cookieLen = cname.length
+            var cLen = document.cookie.length
+            var i = 0
+            var cEnd
+        
+            while (i < cLen)
+                {
+                var j = i + cookieLen
+                if (document.cookie.substring(i,j) == cname)
+                    {
+                    cEnd = document.cookie.indexOf(";",j)
+                    
+                    if (cEnd == -1)
+                        { cEnd = document.cookie.length }
+                    
+                    return unescape(document.cookie.substring((j+1), cEnd))
+                    }
+                i++	
+                }
+        
+            return " "
+            } 
+        
+        $(document).ready(function() {
+                newname = getCookie("name")
+                newcompany = getCookie("company")
+                newposition = getCookie("position")
+                newstatement = getCookie("statement")
+                newphoto = getCookie("photo")
+                $("#user_name").val(newname)
+                $("#user_company").val(newcompany)
+                $("#user_position").val(newposition)
+                $("#user_statement").val(newstatement)
+                $("#user_photo").val(newphoto)
+				
+				personname.push(document.getElementById('user_name').value);
+                personcompany.push(document.getElementById('user_company').value);
+                personposition.push(document.getElementById('user_position').value);
+                statement.push(document.getElementById('user_statement').value);
+                personphotos.push(document.getElementById('user_photo').value);
+                thenumber = personname.length - 1;
+                loadinfo();
+				
+            
+            $("#allcookie").bind("click", function(){
+                alert(document.cookie)
+            })
+        
+            $("#reset").bind("click", function() {
+                $("#user_name").val("")
+                $("#user_company").val("")
+                $("#user_position").val("")
+                $("#user_statement").val("")
+                $("#user_photo").val("")
+            });
+            
+        });
+        
+    </script>
+
+  </body>
+</html>
